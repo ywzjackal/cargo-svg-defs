@@ -1,0 +1,15 @@
+[package]
+name = "cargo-svg-defs"
+version = "0.1.0"
+authors = ["ywzjackal@163.com <ywzjackal@163.com>"]
+repository = "https://github.com/ywzjackal/cargo-svg-defs"
+documentation = "https://docs.rs/cargo-svg-defs/"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/ywzjackal/cargo-svg-defs"
+categories = ["development-tools", "web-programming", "development-tools::cargo-plugins"]
+description = "A tool for making *.svg files to svg-defs"
+keywords = ["build", "cargo", "svg", "plugin"]
+
+[dependencies]
+quick-xml = "0.13"
