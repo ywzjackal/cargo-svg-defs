@@ -4,10 +4,13 @@ use std::env;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    if args.len() != 3 {
-        println!("USAGE: cargo svg-defs dir_path out_path");
-        println!("{:?}", args);
+    if args.len() == 4 {
+        cargo_svg_defs::parse_dir(&args[2], &args[3]).unwrap();
         return;
     }
-    cargo_svg_defs::parse_dir(&args[1], &args[2]).unwrap();
+    if args.len() == 3 {
+        cargo_svg_defs::parse_dir(&args[1], &args[2]).unwrap();
+        return;
+    }
+    println!("USAGE: cargo svg-defs dir_path out_path");
 }

@@ -1,6 +1,6 @@
 [package]
 name = "cargo-svg-defs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["ywzjackal@163.com <ywzjackal@163.com>"]
 repository = "https://github.com/ywzjackal/cargo-svg-defs"
 documentation = "https://docs.rs/cargo-svg-defs/"
